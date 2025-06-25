@@ -44,7 +44,6 @@ Error handling with user-friendly messages
 🛠️ Installation
 Clone the repository:
 
-git clone https://github.com/ankitchaudharijj/encryption_tool.git
 cd encryption_tool
 Install dependencies:
 
