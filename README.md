@@ -41,6 +41,7 @@ Graphical User Interface (GUI) built with Tkinter
 Automatic padding and depadding (PKCS7)
 Easy-to-use file selection dialogs
 Error handling with user-friendly messages
+
 🛠️ Installation
 Clone the repository:
 
@@ -48,6 +49,7 @@ cd encryption_tool
 Install dependencies:
 
 pip install cryptography
+
 🚀 Usage
 Run the application:
 
@@ -55,11 +57,13 @@ python encryption_tool.py
 GUI Options:
 Encrypt File: Select any file you want to encrypt. Enter a strong password when prompted. The output will be saved as filename.ext.enc.
 Decrypt File: Select an .enc file. Enter the password used during encryption. The decrypted file will be saved as filename.ext.dec.
+
 🧠 How It Works
 A random 16-byte salt and IV are generated for each encryption.
 A secure 256-bit key is derived from the password using PBKDF2 with 100,000 iterations.
 Data is encrypted using AES-CBC and padded to a multiple of 16 bytes.
 Decryption reverses the process using the original salt and IV from the encrypted file.
+
 🔐 Security Notes
 Always use a strong password.
 This tool does not store or transmit your password.
